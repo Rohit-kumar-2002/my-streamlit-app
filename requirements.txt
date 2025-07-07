@@ -1,0 +1,17 @@
+streamlit
+pandas
+numpy
+matplotlib
+seaborn
+altair
+plotly
+fpdf
+shap
+Pillow
+joblib
+scikit-learn
+xgboost
+catboost
+prophet
+wordcloud
+bcrypt

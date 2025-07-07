@@ -1,0 +1,145 @@
+/* Global Styles */
+body, .stApp {
+    font-family: 'Segoe UI', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Top App Bar */
+.app-header {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.app-header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.app-header .clock {
+    font-size: 1rem;
+}
+
+/* Sidebar */
+.stSidebar {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar-section {
+    margin-bottom: 1rem;
+}
+
+.sidebar-section h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Main Area */
+.main-content {
+    padding: 1rem;
+}
+
+/* KPI Cards */
+.kpi-card {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.kpi-card h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.kpi-card .value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #212529;
+}
+
+/* Tables */
+.stDataFrame {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stDataFrame:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Charts */
+.plotly-chart {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+.stButton > button {
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Tooltips */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .app-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .app-header .clock {
+        margin-top: 0.5rem;
+    }
+    .main-content {
+        padding: 0.5rem;
+    }
+    .kpi-card {
+        padding: 0.5rem;
+    }
+    .kpi-card .value {
+        font-size: 1.2rem;
+    }
+} 
