@@ -1,4 +1,6 @@
 streamlit
+tensorflow==2.13.0
+keras
 pandas
 numpy
 matplotlib
@@ -12,9 +14,5 @@ joblib
 scikit-learn
 xgboost
 catboost
-prophet[cmdstanpy]
 wordcloud
 bcrypt
-tensorflow==2.13.0
-
-
