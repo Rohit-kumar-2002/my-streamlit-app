@@ -15,4 +15,5 @@ catboost
 prophet
 wordcloud
 bcrypt
-tensorflow
+tensorflow==2.13.0
+
