@@ -3,4 +3,8 @@ primaryColor="#3a86ff"
 backgroundColor="#bbb0b0"
 secondaryBackgroundColor="#a4c3c7"
 textColor="#000000"
+[global]
+showWarningOnDirectExecution = false
+
+[runtime]
 pythonVersion = "3.10"
